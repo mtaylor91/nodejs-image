@@ -2,6 +2,7 @@ FROM images.home.mtaylor.io/base:latest
 RUN apt-get update && apt-get install -y \
     ca-certificates \
     curl \
+    git \
     gnupg \
     && rm -rf /var/lib/apt/lists/*
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key \
